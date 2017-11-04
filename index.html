@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Serch! | Find directories for you downloads.</title>
+      <!-- Local CSS -->
+      <link rel="stylesheet" href="assets/style.css" type="text/css">
+      </link>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+      </link>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      </link> 
+      <!-- Meta Tags -->
+      <meta charset="UTF-8">
+      <meta name="description" content="Serch is a free tool to find direct download links to whatever you want.">
+      <meta name="keywords" content="HTML,CSS,JavaScript">
+      <meta name="author" content="Rahul">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="http://www.google.com/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
+
+   </head>
+   <body>
+      <nav class="navbar fixed-bottom navbar-dark bg-white">
+         <a id="menu" data-toggle="modal" data-target="#modal" class="logo disabled" style="font-size: 28px;" href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <div class="container mt-5 text-center">
+         <div class="row">
+            <div class="jumbotron mx-auto" style="width: 100%;">
+               <h1 class="display-3">Welcome to <a class="logo">Serch.</a></h1>
+               <p class="lead">Serch. let's you search directories on <img style="height: 1em;" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"/> for whatever you want!</p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <div class="input-group dropdown" style="height:150%;">
+                  <div class="input-group-btn">
+                     <button id="btndd" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video <span class="caret"></span></button>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-film" style="float:right" aria-hidden="true"></span>Video</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-music" style="float:right" aria-hidden="true"></span>Audio</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-book" style="float:right" aria-hidden="true"></span>Ebook</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-photo" style="float:right" aria-hidden="true"></span>Pictures</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-file-archive-o" style="float:right" aria-hidden="true"></span>Software/Games</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-tasks" style="float:right" aria-hidden="true"></span>Compressed</a></li>
+                        <li><a class="dropdown-item mr-5" tabindex="-1" href="#"><span class="fa fa-android" style="float:right" aria-hidden="true"></span>Android</a></li>
+                     </ul>
+                  </div>
+                  <input id="input" type="text" class="form-control" placeholder="Use comma to enter multiple queries at once" autofocus>
+                  <span class="input-group-btn dropdown">
+                  <button id="go" class="btn btn-default" type="button"><span class="fa fa-search" aria-hidden="true"></span></button>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="alert alert-info mt-5" role="alert">
+            <strong>Hey!</strong> If you find any problems or bugs, feel free to tell me here.
+         </div>
+      </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModal3Label">Disclaimer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Serch does not gurantee accurate results for your desired 
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Scripts -->  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $(function(){
+         
+              $(".dropdown-menu li a").click(function(){
+              $("#btndd:first-child").text($(this).text());
+              $("#btndd:first-child").append(" <span class=caret></span>");
+              $("#btndd:first-child").val($(this).text());
+         });
+         });
+         
+         $(document).ready(function(){
+         $('body').keypress(function(e){
+                      if(e.which==13){
+                        $('#go').trigger('click');
+                      }
+                    });
+         });           
+         
+         
+         
+         $(document).ready(function(){
+          $('#input').val("");
+          $('#input').focus();
+          $('#go').click(function(){
+            var type=$('#btndd ').val();
+            var query=$('#input').val();
+            var arr=new Array();
+            var commonToAll=" -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml) -inurl:(index_of) intitle:\"index.of./\" ";
+            if(query[query.length-1]==','){
+              query=query.slice(0,-1)
+            }
+            arr=query.split(',');
+            arr.push(',');
+            switch(type){
+              case("Video"):{
+                var extensions=" (avi|mkv|mov|mp4|mpg|wmv)";
+                break;
+              }
+              case("Audio"):{
+                var extensions=" (ac3|flac|m4a|mp3|ogg|wav|wma) ";
+                break;
+              }
+              case("Ebook"):{
+                var extensions=" (CBZ|CBR|CHM|DOC|DOCX|EPUB|MOBI|ODT|PDF|RTF|txt)";
+                break;
+              }
+              case("Pictures"):{
+                var extensions=" (bmp|gif|jpg|png|psd|tif|tiff) ";
+                break;
+              }
+              case("Softwre/Games"):{
+                var extensions=" (apk|exe|iso|rar|tar|zip) ";
+                break;
+              }
+              case("Compressed"):{
+                var extensions=" (7z|bz2|gz|iso|rar|zip) ";
+                break;
+              }
+              case("Android Apps"):{
+                var extensions=" (apk) ";
+                break;
+              }
+              default:{
+                var extensions=" (avi|mkv|mov|mp4|mpg|wmv)";
+                break;
+              }
+            }
+            for (var i =0 ; i <arr.length - 1; i++) {
+              if(arr[i]!=""){
+                var temp=arr[i];
+                var last;
+                temp=temp.replace(/[^\w\s]/gi, '');
+                if(temp!=0){
+                  last=temp.replace(/ /g,".");
+                }
+                var goodinput="intext:\""+last+"\"";
+                var finalquery=goodinput+extensions+commonToAll;
+         
+                var url="https://encrypted.google.com/search?q="+encodeURIComponent(finalquery);
+                //alert(goodinput);
+                window.open(url,'_blank');
+              }
+         
+            }
+         });
+         });
+         
+      </script>
+   </body>
+</html>
