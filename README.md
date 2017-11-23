@@ -2,6 +2,9 @@
 Serch. let's you search directories on Google for whatever you want!
 # How does Serch. work?
 Serch. uses Google dorks to find directories that have listed the file you want to download. It passes your query to a javascript which further queries Google for it in a new tab.
+
+UPDATE : Serch. is now accessible at http://serch.ga
+
 # Installation
 This is a simple HTML page which can run completely client sided. That is, you don't need any server of any kind. Just an internet connection to load the CSS files from a CDN and to open Google.
 # Instructions for usage
